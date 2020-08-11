@@ -678,7 +678,7 @@
 						}
 					},
 					"end": ":",
-					"applyEndPatternLast": true,
+					"applyEndPatternLast": 1,
 					"endCaptures": {
 						"0": {
 							"name": "keyword.operator.ternary.lsl"
