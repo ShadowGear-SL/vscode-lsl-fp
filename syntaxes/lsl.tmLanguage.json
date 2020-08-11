@@ -23,15 +23,15 @@
 			"include": "#storage_types"
 		},
 		{
-			"match": "\\bk[A-Z]\\w*\\b",
+			"match": "\\bk(_|[A-Z])\\w*\\b",
 			"name": "constant.other.variable.mac-classic.lsl"
 		},
 		{
-			"match": "\\bg[A-Z]\\w*\\b",
+			"match": "\\bg(_|[A-Z])\\w*\\b",
 			"name": "variable.other.readwrite.global.mac-classic.lsl"
 		},
 		{
-			"match": "\\bs[A-Z]\\w*\\b",
+			"match": "\\bs(_|[A-Z])\\w*\\b",
 			"name": "variable.other.readwrite.static.mac-classic.lsl"
 		},
 		{
