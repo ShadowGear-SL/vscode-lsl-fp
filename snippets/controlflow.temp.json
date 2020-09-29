@@ -1,0 +1,160 @@
+{
+    "Label": {
+        "prefix": "label",
+        "body": [
+            "@$0;"
+        ],
+        "description": "Label"
+    },
+    "Jump": {
+        "prefix": "jump",
+        "body": [
+            "jump $0;"
+        ],
+        "description": "Jump"
+    },
+    "For Loop": {
+        "prefix": "for",
+        "body": [
+            "for (${1:initial}; ${2:compare}; ${3:increase})",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "For Loop"
+    },
+    "While Loop": {
+        "prefix": "while",
+        "body": [
+            "while (${1:compare})",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "While Loop"
+    },
+    "Do-While Loop": {
+        "prefix": "dowhile",
+        "body": [
+            "do",
+            "{",
+            "\t$0",
+            "}",
+            "while (${1:compare})"
+        ],
+        "description": "Do-While Loop"
+    },
+    "If Statement": {
+        "prefix": "if",
+        "body": [
+            "if (${1:compare})",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "If Statement"
+    },
+    "If-Else Statement": {
+        "prefix": "ifelse",
+        "body": [
+            "if (${1:compare})",
+            "{",
+            "\t$0",
+            "}",
+            "else",
+            "{",
+            "\t",
+            "}"
+        ],
+        "description": "If-Else Statement"
+    },
+    "Switch Statement": {
+        "prefix": "switch",
+        "body": [
+            "switch (${1:value})",
+            "{",
+            "\tcase (${2:case}):",
+            "\t{",
+            "\t\t$0",
+            "\t\tbreak;",
+            "\t}",
+            "\tdefault:",
+            "\t{",
+            "\t\tbreak;",
+            "\t}",
+            "}"
+        ],
+        "description": "Switch Statement"
+    },
+    "Continue": {
+        "prefix": "continue",
+        "body": [
+            "continue;"
+        ],
+        "description": "Continue"
+    },
+    "Break": {
+        "prefix": "break",
+        "body": [
+            "break;"
+        ],
+        "description": "Break"
+    },
+    "Return": {
+        "prefix": "return",
+        "body": [
+            "return $0;"
+        ],
+        "description": "Return"
+    },
+    "Function-Void": {
+        "prefix": "voidfunction",
+        "body": [
+            "${1:name} (${2:agments})",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Function Void"
+    },
+    "Function": {
+        "prefix": "function",
+        "body": [
+            "${1:datatype} ${2:name} (${3:agments})",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Function"
+    },
+    
+    
+    
+    "State-Change": {
+        "prefix": "statechange",
+        "body": [
+            "state $0;"
+        ],
+        "description": "State Change"
+    },
+    "State": {
+        "prefix": "state",
+        "body": [
+            "state ${1:name}",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "State"
+    },
+    "Default": {
+        "prefix": "default",
+        "body": [
+            "default",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Default"
+    }
+}
